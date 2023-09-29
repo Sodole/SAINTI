@@ -3,5 +3,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [],
-  eslint: {},
+  css: ['~/assets/css/main.css'],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 });
