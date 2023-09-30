@@ -49,7 +49,7 @@ yarn preview
 
 ```
 
-// 작업 폴더 생성 및 이동
+## 작업 폴더 생성 및 이동
 
 ```bash
 C:\Users\SAINTI\Desktop\SAINTI Hompage
@@ -57,7 +57,7 @@ C:\Users\SAINTI\Desktop\SAINTI Hompage
 => cd C:\Users\SAINTI\Desktop\SAINTI Hompage
 ```
 
-// nuxt3 시작(Doc : https://nuxt.com/docs/getting-started/installation)
+## nuxt3 시작(Doc : https://nuxt.com/docs/getting-started/installation)
 
 ```bash
 npx nuxi@latest init SAINTI
@@ -70,7 +70,7 @@ npm install
 npm run dev
 ```
 
-// git 연동(github Doc 확인)
+## git 연동(github Doc 확인)
 
 ```bash
 echo "# SAINTI" >> README.md
@@ -82,7 +82,7 @@ git remote add origin https://github.com/Sodole/SAINTI.git
 git push -u origin main
 ```
 
-/ 이후 git 연동
+### 이후 git 연동
 
 ```bash
 git remote add origin https://github.com/Sodole/SAINTI.git
@@ -90,7 +90,7 @@ git branch -M main
 git push -u origin main
 ```
 
-/ 일반적인 git push 방법
+### 일반적인 git push 방법
 
 ```bash
 git add --all
@@ -98,8 +98,9 @@ git commit -m "commit 내용"
 git push
 ```
 
-// eslint, prettier 설정(블로그 : https://univdev.page/posts/eslint-prettier-installation/)
-/ eslint 설정
+## eslint, prettier 설정(블로그 : https://univdev.page/posts/eslint-prettier-installation/)
+
+### eslint 설정
 
 ```bash
 VScode extention => eslint 설치
@@ -119,7 +120,7 @@ eslint --init => npm init @eslint/config 추가됨
 => nuxt3 eslint 설치 => npm install -D @nuxtjs/eslint-module
 ```
 
-/ prettier 설정(블로그 : https://velog.io/@2wndrhs/%EC%95%8C%EC%95%84%EB%91%90%EB%A9%B4-%EC%93%B8%EB%8D%B0%EC%9E%88%EB%8A%94-ESLint-Prettier-%EC%84%A4%EC%A0%95-%EB%B0%A9%EB%B2%95)
+### prettier 설정(블로그 : https://velog.io/@2wndrhs/%EC%95%8C%EC%95%84%EB%91%90%EB%A9%B4-%EC%93%B8%EB%8D%B0%EC%9E%88%EB%8A%94-ESLint-Prettier-%EC%84%A4%EC%A0%95-%EB%B0%A9%EB%B2%95)
 
 ```bash
 VScode extention => pritter 설치
@@ -153,7 +154,7 @@ npm i -D prettier eslint-config-prettier(설치)
   "editor.formatOnType": true
 ```
 
-// tailwindCSS 추가(Doc : https://tailwindcss.com/docs/guides/nuxtjs#standard)
+## tailwindCSS 추가(Doc : https://tailwindcss.com/docs/guides/nuxtjs#standard)
 
 ```bash
 Install Tailwind CSS with Nuxt(참조) : Standard installation
@@ -168,7 +169,7 @@ npm install -D tailwindcss postcss autoprefixer
 => nuxt.config.js 파일에   css: ['~/assets/css/main.css'] css 사용유무 추가
 ```
 
-// pinia Setting
+## pinia Setting
 
 ```bash
 npm install pinia @pinia/nuxt
