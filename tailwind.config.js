@@ -1,11 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    './components/**/*.{js,vue}',
-    './layouts/**/*.vue',
-    './pages/**/*.vue',
-  ],
+  content: ['./layouts/**/*.vue', './pages/**/*.vue'],
   theme: {
+    fontFamily: {
+      sansNeo: ['sansNeo'],
+    },
     extend: {},
   },
   plugins: [],
