@@ -174,6 +174,7 @@ npm install -D tailwindcss postcss autoprefixer
 ```bash
 npm install pinia @pinia/nuxt
 package.json => "overrides": {  "vue": "latest" } 추가
+ * overrides하면 패키지 설치 안되니 설치시 지우기 바랍니다
 nuxt.config.ts =>   modules: [   '@pinia/nuxt',  ], 추가
 =>   pinia: { autoImports: ['defineStore',  ['defineStore', 'definePiniaStore'], ], }, 추가
 ```
