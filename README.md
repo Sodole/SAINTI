@@ -178,3 +178,47 @@ package.json => "overrides": {  "vue": "latest" } 추가
 nuxt.config.ts =>   modules: [   '@pinia/nuxt',  ], 추가
 =>   pinia: { autoImports: ['defineStore',  ['defineStore', 'definePiniaStore'], ], }, 추가
 ```
+
+## font 추가
+
+```bash
+nut.config.ts =>   app:
+{head:
+  {
+    link: [
+    {
+      rel: 'stylesheet',
+      href: '//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css',
+      type: 'text/css',
+    },
+   ],
+  },
+},
+css파일 =>
+* {  font-family: 'Spoqa Han Sans Neo', 'sans-serif';}
+```
+
+## i18n 추가
+
+```bash
+nuxt.conft.ts =>   i18n: {
+    lazy: true,
+    langDir: 'locales',
+    strategy: 'prefix',
+    locales: [
+      {
+        code: 'kr',
+        iso: 'kr-KO',
+        name: 'Korean(KO)',
+        file: 'kr-KO.json',
+      },
+      {
+        code: 'en',
+        iso: 'en-US',
+        name: 'English(US)',
+        file: 'en-US.json',
+      },
+    ],
+    defaultLocale: 'kr',} 추가
+components => kr/en에 따른 component 추가
+```
