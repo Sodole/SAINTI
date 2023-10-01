@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="text-slate-900">
     <p>{{ $t('title') }}</p>
     <LangSwitcher />
   </div>

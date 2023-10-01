@@ -14,7 +14,7 @@ const language = computed({
     <option
       v-for="item in locales"
       :key="typeof item === 'object' ? item.code : item"
-      :value="typeof item == 'object' ? item.code : item"
+      :value="typeof item === 'object' ? item.code : item"
     >
       {{ typeof item === 'object' ? item.code : item }}
     </option>

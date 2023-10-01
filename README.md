@@ -222,3 +222,18 @@ nuxt.conft.ts =>   i18n: {
     defaultLocale: 'kr',} 추가
 components => kr/en에 따른 component 추가
 ```
+
+## sequelize, mysql 추가
+
+```bash
+npm install sequelize mysql2 --save
+nuxt.config.ts => runtimeConfig => config 작성
+server폴더 내에 utils/plugins/models 생성
+utils < 전역에서 사용될 sequelize 연결 생성
+plugins < db 연결 확인
+utils => db.instance.js => sequelize 연결
+export const sequelize = new Sequelize(DBname, username, password, {host, dialect}) 순으로 명시 및 export
+plugins => db.js => 받아서 db 연동 확인
+=> 추후 models 폴더에서 model 정의
+ * api내에 비지니스 로직 작성
+```

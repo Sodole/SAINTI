@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   i18n: {
     lazy: true,
     langDir: 'locales',
-    strategy: 'prefix',
+    strategy: 'no_prefix',
     locales: [
       {
         code: 'kr',
@@ -45,5 +45,10 @@ export default defineNuxtConfig({
   },
   imports: {
     dirs: ['./stores'],
+  },
+  runtimeConfig: {
+    DB_NAME: 'saintis',
+    DB_USER: 'root',
+    DB_PASSWORD: '1234',
   },
 });
