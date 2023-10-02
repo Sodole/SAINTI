@@ -8,5 +8,8 @@ export const sequelize = new Sequelize(
   {
     host: '127.0.0.1',
     dialect: 'mysql',
+
+    //query 결과확인(true,false)
+    // logging: false,
   },
 );
