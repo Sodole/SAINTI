@@ -1,12 +1,12 @@
 module.exports = {
   env: {
     browser: true,
-    commonjs: true,
-    es2021: true,
     node: true,
   },
   extends: [
     'eslint:recommended',
+    '@nuxtjs',
+    'plugin:nuxt/recommended',
     'airbnb-base',
     'plugin:vue/vue3-essential',
     'prettier',
